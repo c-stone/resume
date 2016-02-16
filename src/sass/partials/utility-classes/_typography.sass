@@ -1,0 +1,110 @@
+@import ../variables
+
+header,footer
+	width: 100%
+
+h1,h2,h3,h4,h5,h6,blockquote
+  padding: 0
+  margin: 0
+
+h1, .h1
+	font-size: $fontSize6
+	line-height: 1.1
+
+h2, .h2
+	font-size: $fontSize5
+	line-height: 1.1
+
+h3, .h3
+	font-size: $fontSize4
+	line-height: 1.3
+
+h4, .h4, legend
+	font-size: $fontSize3
+
+h5, .h5
+	font-size: $fontSize2
+
+h6, .h6, .p
+	font-size: $fontSize1
+
+p, pre, blockquote  
+  margin: 0
+  padding: 0 0 $pad2
+  font-size: $fontSize1
+  font-weight: normal
+  line-height: 1.1em
+
+code
+	font-family: Monaco, monospace
+	font-size: .9em
+
+@media (max-width: 480)
+  h1, .h1
+  	font-size: 4em
+
+ul  
+  padding-left: 1.5em
+  list-style-type: disc
+ul ul 
+  padding-top: $pad1
+li
+  padding-bottom: 5px
+
+dt, strong,.bold
+  font-weight: bold
+
+em, .italic
+  font-style: italic
+
+small, .text-smaller 
+  font-size: $fontSizeSmaller
+.text-small-1
+  font-size: $fontSizeSmall1
+.text-small-2
+  font-size: $fontSizeSmall2
+
+.text-reg
+  font-weight: normal
+.text-light
+  font-weight: 200
+
+.text-right
+  text-align: right
+
+.text-left
+  text-align: left
+
+.uppercase
+  text-transform: uppercase
+.lowercase
+  text-transform: lowercase
+
+.letter-space-1
+  letter-spacing: 1px
+
+.line-height-1
+  line-height: 1.1em;
+
+.list-style-none
+  list-style: none
+
+.underline
+  border-bottom: 1px dotted #000
+
+.border-vert
+  border-top: 1px dotted #000
+  border-bottom: 1px dotted #000
+
+.border-bottom
+  border-bottom: 1px dotted #000
+
+
+.highlight-section-header:hover h3
+  color: #2D5795
+  background: #fafafa
+  -webkit-transition: color .5s ease-in
+  -moz-transition: color .5s ease-in
+  -o-transition: color .5s ease-in
+  transition: color .5s ease-in
+
